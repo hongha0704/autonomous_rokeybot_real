@@ -94,7 +94,7 @@ https://youtu.be/cOo7qpPeUjg (00:21 ~ 01:00)
 
 ## 3. 🗓 프로젝트 구현 일정
 **진행 일자: 25.06.16(월) ~ 25.06.20(금) (5일)**
-<img src="rokey_project/image/notion/250717_project_management.png" width="100%" height="100%" title="px(픽셀) 크기 설정" alt="project_management"></img>
+<img src="https://github.com/user-attachments/assets/ab44f0ea-26f2-483e-8ce9-c726ce503fa9" width="100%" height="100%" title="px(픽셀) 크기 설정" alt="project_management"></img>
 
 &nbsp;
 
