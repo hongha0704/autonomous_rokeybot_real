@@ -135,6 +135,6 @@ https://youtu.be/cOo7qpPeUjg (00:21 ~ 01:00)
 &nbsp;
 
 ## 6. 🛠️ Node Architecture
-<img src="https://github.com/user-attachments/assets/f5e56d89-cfc8-4112-b8d1-b437e9dd1226" width="75%" height="75%" title="px(픽셀) 크기 설정" alt="system_flow"></img>
+<img src="https://github.com/user-attachments/assets/f5e56d89-cfc8-4112-b8d1-b437e9dd1226" width="100%" height="100%" title="px(픽셀) 크기 설정" alt="Node Architecture"></img>
 
 &nbsp;
