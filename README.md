@@ -69,6 +69,7 @@ https://youtu.be/cOo7qpPeUjg (00:21 ~ 01:00)
 #### [4. 📌 SKILLS](#4--skills-1)   
 #### [5. 🤖 Hardware](#5--hardware-1)   
 #### [6. 🛠️ Node Architecture](#6-%EF%B8%8F-node-architecture-1)   
+#### [7. ✨ 주요 기능](#6-%EF%B8%8F-node-architecture-1)   
 
 ---
 
@@ -138,3 +139,35 @@ https://youtu.be/cOo7qpPeUjg (00:21 ~ 01:00)
 <img src="https://github.com/user-attachments/assets/f5e56d89-cfc8-4112-b8d1-b437e9dd1226" width="100%" height="100%" title="px(픽셀) 크기 설정" alt="Node Architecture"></img>
 
 &nbsp;
+
+## 7. ✨ 주요 기능
+
+### 0. Aruco Marker 인식 및 Manipulation
+- 시나리오   
+<img width="1241" height="425" alt="250723_시나리오" src="https://github.com/user-attachments/assets/690fdf1e-0b5c-4874-971a-4c13fbfc9532" />
+
+&nbsp;
+### 1. Aruco Marker 인식
+- Aruco Marker 인식
+  - ArucoDetector를 통해 마커 검출기 생성
+  - 감지된 마커는 이미지에 시각적으로 표시됨
+  - 마커의 위치 좌표와 거리 계산   
+<img width="499" height="416" alt="250723_아르코마커인식" src="https://github.com/user-attachments/assets/f581d014-faba-4449-868b-f4b36d2801dd" />
+
+&nbsp;
+### 2. Manipulation   
+- 감속 및 정지
+  - detected_markers subscription
+  - ```msg.pose.position``` 으로 Marker 메시지에서 위치 추출
+  - 마커가 감지됐을 때 터틀봇에 감속명령 퍼블리시 ```(/robot_state = ‘slow’)```
+  - 마커 가까이서 감지 됐을 때 터틀봇에 정지 명령 퍼블리시 ```(/robot_state = ‘stop’)```
+
+<img width="448" height="267" alt="250723_터틀봇정지감속" src="https://github.com/user-attachments/assets/b1f9c422-b682-45b1-a853-76f7efe8e4a4" />   
+
+![B-1 협동3 pick block 1](https://github.com/user-attachments/assets/8127f348-df74-4b9a-9e3a-55e74cd28b1f)
+
+- Manipulation
+  - 정지 후 ```arm_client.send_request``` 로 로봇팔에 pick and place 작업 지시를 보냄
+  - 아르코마커 장애물을 pick and place한 후, 터틉봇에 주행 명령 퍼블리시 ```(/robot_state = ‘drive’)```
+
+![B-1 협동3 pick block 2](https://github.com/user-attachments/assets/fe5f78b8-ae9e-4ece-bfa1-5a7f156719b2)
