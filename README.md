@@ -69,7 +69,7 @@ https://youtu.be/cOo7qpPeUjg (00:21 ~ 01:00)
 #### [4. 📌 SKILLS](#4--skills-1)   
 #### [5. 🤖 Hardware](#5--hardware-1)   
 #### [6. 🛠️ Node Architecture](#6-%EF%B8%8F-node-architecture-1)   
-#### [7. ✨ 주요 기능](#6-%EF%B8%8F-node-architecture-1)   
+#### [7. ✨ 주요 기능](#7--주요-기능-1)   
 
 ---
 
